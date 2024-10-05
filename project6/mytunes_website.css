@@ -1,0 +1,290 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: "roboto", sans-serif;
+    font-weight: 300;
+    line-height: 1.4;
+    scroll-behavior: smooth;
+}
+
+section{
+    scroll-margin: 50px;
+}
+header {
+    background-color: #270082;
+    position: sticky;
+    top: 0;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    z-index: 100;
+}
+
+nav {
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0px auto;
+    color: white;
+}
+
+.logo {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    border-bottom: 2px solid transparent;
+    transition: 0.2s ease-in;
+}
+
+nav ul li:hover {
+    border-bottom: 2px solid white;
+    transition: 0.2s ease-in;
+}
+
+/* hero section */
+
+.hero_container {
+    background-image: url(hero_image.png);
+    background-position: calc();
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+
+.hero_container .container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.container h1 {
+    font-size: 92px;
+}
+
+.hero_container .container h3 {
+    font-size: 32px;
+}
+
+/* music section*/
+button:hover {
+    transition: 0.2s ease-in-out;
+    opacity: 0.8;
+}
+
+.music {
+    background-color: #281154;
+    padding-top: 50px;
+}
+
+.music .container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    place-items: center;
+    text-align: center;
+}
+
+.first_btn {
+    background-color: #dc0000;
+    padding: 10px 15px;
+    color: #fff;
+    transition: 0.2s ease-in-out;
+}
+
+.container h4 {
+    text-align: left;
+}
+
+.ipad-iphone-img {
+    margin-top: -400px;
+    position: relative;
+    top: 400px;
+}
+
+/* music info */
+
+.music_infomation {
+    padding-top: 500px;
+    display: grid;
+    place-items: center;
+    gap: 50px;
+    text-align: center;
+    margin-bottom: 50px;
+    color: black;
+}
+
+.second_btn {
+    background-color: #270082;
+    color: white;
+    padding: 10px 15px;
+}
+
+.video {
+    background-image: url(video.png);
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 800px;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    color: white;
+}
+
+.video .container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: -200px;
+}
+
+/* gift card section */
+.card_section {
+    color: black;
+    display: flex;
+    justify-content: center;
+    margin: 100px 0;
+    gap: 50px;
+}
+
+.gift_card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* first footer */
+
+.first-footer {
+    background-color: #1b0058;
+    padding: 20px;
+}
+
+.first-footer .container {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.first-footer h4 {
+    border-bottom: 2px solid white;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+.second-footer {
+    background-color: #270082;
+    padding: 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.card_section {
+    scroll-margin: 120px;
+}
+
+@media(max-width:786px){
+    .logo{
+        font-size: 20px;
+    }
+    .container{
+        margin: 0 10px;
+    }
+    nav ul {
+        display: flex;
+        gap: 10px;
+    }
+    header .container{
+        margin: 0 5px;
+    }
+    .hero_container .container h3 {
+        font-size: 22px;
+    }
+    .container h1{
+        font-size: 40px;
+    }
+    .container h3{
+        font-size: 20px;
+    }
+    .hero_container{
+        display: flex;
+        justify-content: center;
+    }
+    .music img{
+        max-width: 70%;
+    }
+    .music .container {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    } 
+    .music{
+        padding-top: 25px;
+    }
+    .music_infomation{
+        gap: 15px;
+    }
+    .music_infomation img{
+        max-width: 70%;
+    }
+    .music_infomation p{
+            display: flex;
+            flex-wrap: wrap;
+    }
+    
+    .card_section {
+    
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card_section  img{
+        width: 70%;
+    }
+
+    .card_section{
+        gap: 15px;
+        margin: 50px 0;
+    }
+    
+    .gift_card{
+        gap: 10px;
+    }
+    .first-footer .container{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}

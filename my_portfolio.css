@@ -1,0 +1,305 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body,
+html {
+    font-family: "poppins", sans-serif;
+    line-height: 1.4;
+    font-weight: 300;
+    scroll-behavior: smooth;
+    color: white;
+}
+
+body {
+    font-size: 1.4rem;
+}
+
+header {
+    background-color: #0089b7;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+ul {
+    list-style: none;
+}
+
+nav ul {
+    display: flex;
+    gap: 1rem;
+    font-size: 1.8rem;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+nav li:hover {
+    border-bottom: 0.4rem solid yellow;
+    transition: 0.3s ease-in-out;
+}
+
+nav li {
+    border-bottom: 0.4rem solid transparent;
+    transition: 0.3s ease-in-out;
+}
+
+#hero {
+    background-color: #003d62;
+    padding: 6rem 0;
+    border-bottom: 4px solid #0089b7;
+}
+
+.my-img img {
+    object-fit: cover;
+    max-width: 37.3rem;
+    border-radius: 18rem;
+}
+
+.hero-content {
+    display: grid;
+    place-items: center;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.greet-text {
+    font-size: 6rem;
+    font-weight: bold;
+    color: #fff700;
+}
+
+.name-text {
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+.hero-content h2 {
+    font-size: 4rem;
+    font-weight: bold;
+
+    overflow: hidden;
+    border-right: 0.15em solid orange;
+    white-space: nowrap;
+    margin: 0 auto;
+    animation: typing 5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 50%;
+    }
+}
+
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: orange;
+    }
+}
+
+#hero .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* poject section */
+
+#Project {
+    background-color: #003251;
+}
+
+#Project h2 {
+    font-size: 6rem;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    padding-bottom: 2rem;
+}
+
+.grid-item {
+    display: grid;
+    place-items: center;
+}
+
+.card {
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    transition: 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transition: 1s ease-in-out;
+}
+
+.card:hover img {
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out;
+    opacity: 0.8;
+}
+
+.card:hover .card-content {
+    background-color: white;
+    color: #003d62;
+    transform: translateY(0px);
+}
+
+.card-content {
+    padding: 2rem;
+    position: relative;
+    top: -6.5rem;
+    margin-bottom: -6.5rem;
+    transition: 0.5s ease-in-out;
+    transform: translateY(100px);
+}
+
+.card-content h3 {
+    text-align: center;
+}
+
+/* contact section */
+
+#Contact {
+    background-color: #003d62;
+}
+
+#Contact h2 {
+    font-size: 6rem;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+#Contact .container {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    justify-content: center;
+}
+
+.top-contact {
+    max-width: 800px;
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+}
+
+.bottom-contact {
+    max-width: 400px;
+    gap: 2rem;
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+}
+
+.contact-way a {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.contact-way i {
+    font-size: 3rem;
+}
+
+.contact-way h3 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+/* footer */
+
+footer {
+    background-color: #003251;
+    text-align: center;
+    padding: 2rem;
+}
+
+footer .container {
+    font-size: 3rem;
+}
+/* responsive */
+@media (max-width:786px){
+      html{
+        font-size: 40%;
+      }
+
+      #hero .container{
+        flex-direction: column;
+    }
+    .my-img {
+        display: grid;
+        place-items: center;
+    }
+    #contact{
+        height: 70vh;
+    }
+}
+
+@media (max-width:500px){
+    html{
+      font-size: 32%;
+    }
+    #hero .container{
+        flex-direction: column;
+    }
+    .my-img {
+        display: grid;
+        place-items: center;
+    }
+    #contact{
+        height: 50vh;
+    }
+}
